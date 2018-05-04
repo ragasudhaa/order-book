@@ -1,0 +1,47 @@
+#root {
+  width: 750px;
+  text-align: left;
+  margin: 0px auto;
+  font-size: 14px;
+}
+
+h1.instrument {
+  font-family: Arial;
+  font-size: 32px;
+}
+.OrderBook table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.OrderBook table thead:after {
+    content: "-";
+    display: block;
+    line-height: 1em;
+    color: transparent;
+}
+
+.OrderBook table tbody td {    
+    padding: 10px 5px;
+}
+.OrderBook table tbody tr:nth-child(odd) {
+  background-color: #f2f3f4;
+}
+.OrderBook table tbody tr.bid td:first-child {
+  color: #00897B;
+}
+.OrderBook table tbody tr.ask td:first-child {
+  color: #E57373;
+}
+.OrderBook table tbody td.fill-bid {
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to left, #BAE2C6 100%, white 0%);
+  background-size: 0%;
+}
+
+.OrderBook table tbody td.fill-ask {
+  background-repeat: no-repeat;  
+  background-image: linear-gradient(to left, #F6C6BA 100%, white 0%);
+  background-size: 0%;
+}
